@@ -1,6 +1,5 @@
 import { BlogSection } from "./components/BlogSection";
 import { FaqSection } from "./components/FaqSection";
-import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import ResponsiveNavbar from "./components/Navbar/ResponsiveNavbar";
 import { TherapyTypes } from "./components/TherapyTypes";
@@ -15,7 +14,6 @@ export default function Home() {
       <WorkingAreas />
       <BlogSection />
       <FaqSection />
-      <Footer />
     </>
   )
 }

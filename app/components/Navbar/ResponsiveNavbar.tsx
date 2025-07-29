@@ -8,8 +8,8 @@ import { CgClose } from 'react-icons/cg'
 
 const links = [
     { name: 'Anasayfa', href: '/' },
-    { name: 'Hakkımda', href: '/hakkimda' },
-    { name: 'Terapiler', href: '/terapiler' },
+    { name: 'Hakkımda', href: '/about' },
+    { name: 'Terapiler', href: '/workingAreas' },
     { name: 'Psikolojik Sorunlar', href: '/sorunlar' },
     { name: 'Blog', href: '/blog' },
     { name: 'İletişim', href: '/iletisim' },
