@@ -20,7 +20,7 @@ const therapies: TherapyItem[] = [
         title: 'Online Terapi',
         description:
             'Online terapi; terapistin danışan ile internet aracılığıyla görüntülü görüşme platformlarında konuşarak gerçekleştirdiği psikoterapi biçimidir. Online terapide de tıpkı yüz yüze terapide olduğu gibi danışan ve terapistin birbirlerini duyup görebileceği ve görüşmelerin yalnızca bu iki taraf açısından duyulabileceği ofis ortamı sağlanmalıdır.',
-        link: '#'
+        link: 'contact'
     },
     {
         id: 2,
@@ -28,13 +28,13 @@ const therapies: TherapyItem[] = [
         title: 'Yüz Yüze Terapi',
         description:
             'Psikoterapi: Eğitimli bir ruh sağlığı profesyonelinin hasta/danışanın mevcut yakınmalarını ortadan kaldırmak veya geriletmek, rahatsızlık veren davranış örüntülerini düzeltmek ve olumlu kişilik gelişimini teşvik etmek amacıyla, her iki tarafın da bilerek profesyonel bir ilişki kurduğu psikolojik tedavidir.',
-        link: '#'
+        link: 'contact'
     }
 ]
 
 export const TherapyTypes = () => {
     return (
-        <section className="w-full py-20 bg-[#f8f9fa] shadow-[inset_0_5px_15px_rgba(0,0,0,0.05)]">
+        <section className="w-full py-20 bg-white shadow-[inset_0_5px_15px_rgba(0,0,0,0.05)]">
             <div className="max-w-7xl relative w-full h-[400px] mx-auto px-6">
                 <h2 className="text-3xl font-bold text-center text-[#2f3e46] mb-12 uppercase">
                     Terapi Yöntemleri
@@ -63,7 +63,7 @@ export const TherapyTypes = () => {
                                     href={link}
                                     className="inline-block text-base font-semibold text-[var(--color-accentMint)] mt-4 group-hover:underline transition-colors"
                                 >
-                                    Detaylı Bilgi →
+                                    Randevu Al
                                 </Link>
                             </div>
                         </div>

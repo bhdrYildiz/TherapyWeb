@@ -9,10 +9,9 @@ import { CgClose } from 'react-icons/cg'
 const links = [
     { name: 'Anasayfa', href: '/' },
     { name: 'Hakkımda', href: '/about' },
-    { name: 'Terapiler', href: '/workingAreas' },
-    { name: 'Psikolojik Sorunlar', href: '/sorunlar' },
+    { name: 'Çalışma Alanlarım', href: '/workingAreas' },
     { name: 'Blog', href: '/blog' },
-    { name: 'İletişim', href: '/iletisim' },
+    { name: 'İletişim', href: '/contact' },
 ]
 
 const ResponsiveNavbar = () => {
@@ -41,8 +40,8 @@ const ResponsiveNavbar = () => {
             >
                 <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
                     {/* Logo */}
-                    <div className="text-xl font-light tracking-wide text-[var(--color-deepPurple)]">
-                        <span className="text-[var(--accent)]">KLİNİK PSİKOLOG</span> <span className="font-semibold">EMİNE</span> KIYGA
+                    <div className="text-xl font-light tracking-wide text-[var(--color-textGray)]">
+                        <span className="text-[var(--color-textGray)]">KLİNİK PSİKOLOG</span> <span className="font-semibold">EMİNE</span> KIYGA
                     </div>
 
                     {/* Desktop nav */}
@@ -51,8 +50,8 @@ const ResponsiveNavbar = () => {
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className={`relative text-base font-medium text-[var(--color-deepPurple)] after:block after:content-[''] after:absolute
-                after:h-[2px] after:bg-[var(--color-accentMint)] after:w-full after:scale-x-0 hover:after:scale-x-100
+                                className={`relative text-base font-medium text-[var(--color-textGray)] after:block after:content-[''] after:absolute
+                after:h-[3px] after:bg-[var(--color-accentMint)] after:w-full after:scale-x-0 hover:after:scale-x-100
                 after:transition-transform after:duration-300 after:origin-right`}
                             >
                                 {link.name}

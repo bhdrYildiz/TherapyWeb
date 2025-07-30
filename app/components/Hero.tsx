@@ -37,22 +37,22 @@ export const Hero = () => {
                             <p className="text-gray-800 my-2 text-sm max-w-[240px] md:max-w-[400px]">
                                 İstanbul'da Klinik Psikolog olarak psikolojik danışmanlık hizmetleri sunuyorum. Birlikte planlı şekilde ilerleyerek yaşadığınız zorlukların üstesinden gelmenize yardımcı oluyorum. Hizmetlerim arasında EMDR uygulamaları, depresyon ile baş etme teknikleri ve kaygı durumlarında destek çalışmaları bulunmaktadır. Her danışanın ihtiyacına özel yaklaşımlar geliştirerek, ruhsal iyi oluş halinize katkı sağlamak için buradayım.
                             </p>
-                            <Link href="#" className="text-[#5c5470] font-semibold text-sm group-hover:underline flex justify-center items-center mt-6 cursor-pointer">
+                            <Link href="/about" className="text-[#5c5470] font-semibold text-sm group-hover:underline flex justify-center items-center mt-6 cursor-pointer">
                                 DAHA FAZLA →
                             </Link>
                             <ul className="flex justify-center space-x-2 mt-6">
                                 <li>
-                                    <Link href="#" className="bg-[#2f3e46] text-[#f8f9fa] hover:text-[#c8b6ff] w-8 h-8 flex items-center justify-center hover:bg-[var(--color-accentMint)]">
+                                    <Link href="mailto:eminekiyga.50@gmail.com" className="bg-[#2f3e46] text-[#f8f9fa] hover:text-[#c8b6ff] w-8 h-8 flex items-center justify-center hover:bg-[var(--color-accentMint)]">
                                         <FaGooglePlusG />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="bg-[#2f3e46] text-[#f8f9fa] hover:text-[#c8b6ff] w-8 h-8 flex items-center justify-center hover:bg-[var(--color-accentMint)]">
+                                    <Link href="https://www.linkedin.com/in/emine-k%C4%B1yga-b68450198/" className="bg-[#2f3e46] text-[#f8f9fa] hover:text-[#c8b6ff] w-8 h-8 flex items-center justify-center hover:bg-[var(--color-accentMint)]">
                                         <FaLinkedinIn />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="bg-[#2f3e46] text-[#f8f9fa] hover:text-[#c8b6ff] w-8 h-8 flex items-center justify-center hover:bg-[var(--color-accentMint)]">
+                                    <Link href="https://www.instagram.com/eminekiyga_/" className="bg-[#2f3e46] text-[#f8f9fa] hover:text-[#c8b6ff] w-8 h-8 flex items-center justify-center hover:bg-[var(--color-accentMint)]">
                                         <FaInstagram />
                                     </Link>
                                 </li>
@@ -65,9 +65,9 @@ export const Hero = () => {
                 <div className="relative w-full max-w-[480px] h-[400px] bg-[#f8f9fa] bg-opacity-80 shadow-xl p-8 hover:scale-[1.04] transition-transform duration-300 mt-6 md:mt-0">
                     <h2 className="text-xl font-bold text-[#2f3e46] mb-4">Klinik Psikolog Emine Kıyga</h2>
                     <p className="text-base text-[#2f3e46] mt-2 mb-2 ">
-                        Kayseri’de psikolog olarak psikolojik danışmanlık hizmetleri sunuyorum. Birlikte planlı şekilde ilerleyerek yaşadığınız zorlukların üstesinden gelmenize yardımcı oluyorum. Hizmetlerim arasında EMDR uygulamaları, depresyon ile baş etme teknikleri ve kaygı durumlarında destek çalışmaları bulunmaktadır. Her danışanın ihtiyacına özel yaklaşımlar geliştirerek, ruhsal iyi oluş halinize katkı sağlamak için buradayım.
+                        İstanbul'da psikolog olarak psikolojik danışmanlık hizmetleri sunuyorum. Birlikte planlı şekilde ilerleyerek yaşadığınız zorlukların üstesinden gelmenize yardımcı oluyorum. Hizmetlerim arasında EMDR uygulamaları, depresyon ile baş etme teknikleri ve kaygı durumlarında destek çalışmaları bulunmaktadır. Her danışanın ihtiyacına özel yaklaşımlar geliştirerek, ruhsal iyi oluş halinize katkı sağlamak için buradayım.
                     </p>
-                    <Link href="#"
+                    <Link href="contact"
                         className="inline-block mt-6 text-base font-semibold text-[#2f3e46] hover:text-[#f8f9fa] bg-[var(--color-accentMint)] hover:bg-[#5c5470] px-4 py-2 rounded transition-colors"
                     >
                         Randevu Al →

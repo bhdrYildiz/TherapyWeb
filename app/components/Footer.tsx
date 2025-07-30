@@ -3,6 +3,12 @@
 import { FaInstagram, FaPhone, FaEnvelope, FaGooglePlusG, FaLinkedinIn } from 'react-icons/fa'
 import Link from 'next/link'
 
+const socialLinks = [
+    { href: 'mailto:eminekiyga.50@gmail.com', icon: FaGooglePlusG },
+    { href: 'https://www.linkedin.com/in/emine-k%C4%B1yga-b68450198/', icon: FaLinkedinIn },
+    { href: 'https://www.instagram.com/eminekiyga_/', icon: FaInstagram },
+]
+
 export const Footer = () => {
     return (
         <footer className="bg-[#2f3e46]/90 text-white pt-16 pb-8 mt-auto">
@@ -23,9 +29,9 @@ export const Footer = () => {
                         {[
                             { label: "Ana Sayfa", href: "/" },
                             { label: "Hakkımda", href: "/about" },
-                            { label: "Terapiler", href: "/services" },
-                            { label: "İletişim", href: "/contact" },
+                            { label: "Çalışma Alanlarım", href: "/workingAreas" },
                             { label: "Blog", href: "/blog" },
+                            { label: "İletişim", href: "/contact" },
                         ].map((item, i) => (
                             <li key={i}>
                                 <Link
@@ -43,8 +49,8 @@ export const Footer = () => {
                 <div className='ml-12'>
                     <h3 className="text-xl font-semibold mb-4">İletişim</h3>
                     <ul className="text-sm text-white space-y-2">
-                        <li className="flex items-center gap-2"><FaEnvelope />info@psikologbahadir.com</li>
-                        <li className="flex items-center gap-2"><FaPhone /> +90 532 000 00 00</li>
+                        <li className="flex items-center gap-2"><FaEnvelope />eminekiyga.50@gmail.com</li>
+                        <li className="flex items-center gap-2"><FaPhone /> +90 538 543 83 24</li>
 
                         <li>İstanbul, Türkiye</li>
                     </ul>
@@ -54,10 +60,12 @@ export const Footer = () => {
                 <div className='ml-12'>
                     <h3 className="text-xl font-semibold mb-4">Sosyal Medya</h3>
                     <ul className="flex space-x-3 mt-2">
-                        {[FaGooglePlusG, FaLinkedinIn, FaInstagram].map((Icon, i) => (
+                        {socialLinks.map(({ href, icon: Icon }, i) => (
                             <li key={i}>
                                 <Link
-                                    href="#"
+                                    href={href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="bg-[#2f3e46] text-[#f8f9fa] hover:text-white w-9 h-9 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-[var(--color-accentMint)] shadow-sm"
                                 >
                                     <Icon />
