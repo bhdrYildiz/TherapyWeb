@@ -14,7 +14,7 @@ const ContactPage = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="relative z-10 text-[#2f3e46] text-4xl sm:text-5xl font-bold tracking-wide uppercase mt-12 text-center"
+                    className="relative z-10 text-[#2f3e46] text-2xl sm:text-3xl font-bold tracking-wide uppercase mt-12 text-center"
                 >
                     İLETİŞİM
                 </motion.h1>
@@ -116,17 +116,16 @@ const ContactPage = () => {
                     <div className="max-w-7xl mx-auto mt-16 px-2">
                         <div className="w-full h-[450px]">
                             <iframe
-                                title="Yıldız Hotel Konumu"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.67950900664!2d34.91486377633296!3d38.63261497177908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152a5cdd1a34f68b%3A0xfba04847217ba7b8!2sY%C4%B1ld%C4%B1z%20Hotel!5e0!3m2!1str!2str!4v1718123456789!5m2!1str!2str"
-                                width="100%"
-                                height="100%"
+                                title="Psikoloji Merkezi Konumu"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.745219343224!2d29.0282374!3d40.987059499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb53520b3baf%3A0x18f61abe0f9826d5!2s%C3%96z%20Psikoloji!5e0!3m2!1str!2str!4v1755350747306!5m2!1str!2str"
                                 className="w-full h-full shadow rounded-md"
                                 allowFullScreen
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                            />
+                            ></iframe>
                         </div>
                     </div>
+
                 </div>
             </section>
 

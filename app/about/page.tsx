@@ -14,7 +14,7 @@ const AboutPage = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="relative z-10 text-[#2f3e46] text-4xl sm:text-5xl font-bold tracking-wide uppercase mt-12 text-center"
+                    className="relative z-10 text-[#2f3e46] text-2xl sm:text-3xl font-bold tracking-wide uppercase mt-12 text-center"
                 >
                     Hakkımda
                 </motion.h1>

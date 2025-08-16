@@ -6,7 +6,7 @@ import Link from 'next/link'
 const socialLinks = [
     { href: 'mailto:eminekiyga.50@gmail.com', icon: FaGooglePlusG },
     { href: 'https://www.linkedin.com/in/emine-k%C4%B1yga-b68450198/', icon: FaLinkedinIn },
-    { href: 'https://www.instagram.com/eminekiyga_/', icon: FaInstagram },
+    { href: 'https://www.instagram.com/pskd.eminekiyga/', icon: FaInstagram },
 ]
 
 export const Footer = () => {
