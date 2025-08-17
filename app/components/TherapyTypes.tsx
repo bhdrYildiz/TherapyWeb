@@ -35,12 +35,12 @@ const therapies: TherapyItem[] = [
 export const TherapyTypes = () => {
     return (
         <section className="w-full py-20 bg-white shadow-[inset_0_5px_15px_rgba(0,0,0,0.05)]">
-            <div className="max-w-7xl relative w-full h-[400px] mx-auto px-6">
-                <h2 className="text-3xl font-bold text-center text-[#2f3e46] mb-12 uppercase">
+            <div className="max-w-7xl relative w-full h-auto min-h-[400px] mx-auto px-6">
+                <h2 className="text-2xl uppercase font-bold text-center text-[#2f3e46] mb-12">
                     Terapi Yöntemleri
                 </h2>
 
-                <div className="grid gap-10 md:grid-cols-2 h-[320px]">
+                <div className="grid gap-10 md:grid-cols-2">
                     {therapies.map(({ id, icon: Icon, title, description, link }) => (
                         <div
                             key={id}
@@ -69,7 +69,8 @@ export const TherapyTypes = () => {
                         </div>
                     ))}
                 </div>
+
             </div>
-        </section>
+        </section >
     )
 }

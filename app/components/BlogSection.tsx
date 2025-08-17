@@ -43,7 +43,7 @@ export const BlogSection = () => {
     return (
         <section className="w-full py-20 bg-white">
             <div className="max-w-7xl mx-auto px-6">
-                <h2 className="text-3xl font-bold text-center text-[#2f3e46] mb-2 uppercase">
+                <h2 className="text-2xl uppercase font-bold text-center text-[#2f3e46] mb-12">
                     Blog Yazılarım
                 </h2>
                 <p className="text-center text-gray-600 mb-12 max-w-xl mx-auto">

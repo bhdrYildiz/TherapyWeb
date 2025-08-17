@@ -45,7 +45,7 @@ export const FaqSection = () => {
     return (
         <section className="w-full py-24 bg-[#f8f9fa]">
             <div className="max-w-4xl mx-auto px-6">
-                <h2 className="text-4xl font-bold text-center text-[#2f3e46] mb-16 uppercase">
+                <h2 className="text-2xl uppercase font-bold text-center text-[#2f3e46] mb-12">
                     Sıkça Sorulan Sorular
                 </h2>
 

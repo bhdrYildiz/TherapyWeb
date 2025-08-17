@@ -30,8 +30,8 @@ const AboutPage = () => {
                         viewport={{ once: true }}
                     >
                         <Image
-                            src="/images/resim12.jpg"
-                            alt="Psikolog Bahadır Yıldız"
+                            src="/images/Eminekiyga.jpg"
+                            alt="Psikolog Emine Kiyga"
                             width={500}
                             height={500}
                             className="rounded-md shadow-lg object-cover"
