@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const WhatsappButton = () => {
     return (
         <Link
-            href="https://wa.me/9053835438324"
+            href="https://wa.me/905385438324"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp üzerinden randevu oluşturabilirsiniz!"

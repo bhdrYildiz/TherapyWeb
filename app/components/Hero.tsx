@@ -46,7 +46,7 @@ export const Hero = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="https://www.instagram.com/eminekiyga_/"
+                            <Link href="https://www.instagram.com/pskd.eminekiyga/"
                                 className="bg-[#2f3e46] text-[#f8f9fa] hover:text-[#5c5470] w-9 h-9 flex items-center justify-center rounded hover:bg-[var(--color-accentMint)] transition-colors">
                                 <FaInstagram />
                             </Link>

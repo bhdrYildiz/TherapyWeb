@@ -115,13 +115,13 @@ const AboutPage = () => {
                     <div className="space-y-6">
                         {[
                             {
-                                title: "Psikoloji Lisans Eğitimi",
-                                institution: "X Üniversitesi, 2014 - 2018",
+                                title: "Psikolojik Danışmanlık ve Rehberlik Lisans Eğitimi",
+                                institution: "Marmara Üniversitesi, 2018 - 2022",
                                 type: "Eğitim"
                             },
                             {
                                 title: "Klinik Psikoloji Yüksek Lisansı",
-                                institution: "Y Üniversitesi, 2019 - 2021",
+                                institution: "İstanbul Aydın Üniversitesi, 2023 - 2025",
                                 type: "Eğitim"
                             },
                             {

@@ -36,13 +36,14 @@ export default function WorkingAreaDetailPage() {
                         </div>
 
                         {/* Görsel (placeholder) */}
-                        <div className="w-full h-[300px] bg-gray-200 rounded-lg shadow-inner mb-8 flex items-center justify-center">
+                        <div className="w-full aspect-[16/9] bg-gray-200 rounded-lg shadow-inner mb-8 overflow-hidden">
                             <img
                                 src={area.image}
                                 alt={area.title}
                                 className="w-full h-full object-cover rounded-md"
                             />
                         </div>
+
 
                         {/* Markdown İçerik */}
                         <article className="text-base text-gray-800 leading-relaxed space-y-4 prose max-w-none">
