@@ -1,10 +1,10 @@
 'use client'
 
-import { FaInstagram, FaPhone, FaEnvelope, FaGooglePlusG, FaLinkedinIn } from 'react-icons/fa'
+import { FaInstagram, FaPhone, FaGooglePlusG, FaEnvelope, FaLinkedinIn, FaMapMarkerAlt } from 'react-icons/fa'
 import Link from 'next/link'
 
 const socialLinks = [
-    { href: 'mailto:eminekiyga.50@gmail.com', icon: FaGooglePlusG },
+    { href: 'mailto:klnpskeminekiyga@outlook.com', icon: FaGooglePlusG },
     { href: 'https://www.linkedin.com/in/emine-k%C4%B1yga-b68450198/', icon: FaLinkedinIn },
     { href: 'https://www.instagram.com/pskd.eminekiyga/', icon: FaInstagram },
 ]
@@ -49,10 +49,17 @@ export const Footer = () => {
                 <div className='ml-12'>
                     <h3 className="text-xl font-semibold mb-4">İletişim</h3>
                     <ul className="text-sm text-white space-y-2">
-                        <li className="flex items-center gap-2"><FaEnvelope />eminekiyga.50@gmail.com</li>
-                        <li className="flex items-center gap-2"><FaPhone /> +90 538 543 83 24</li>
-
-                        <li>İstanbul, Türkiye</li>
+                        <li className="flex items-center gap-2">
+                            <FaEnvelope className="text-[var(--color-accentMint)]" size={18} />
+                            klnpskeminekiyga@outlook.com
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <FaPhone className="text-[var(--color-accentMint)]" size={18} /> +90 538 543 83 24
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <FaMapMarkerAlt className="text-[var(--color-accentMint)]" size={18} />
+                            İstanbul, Türkiye
+                        </li>
                     </ul>
                 </div>
 
@@ -78,7 +85,7 @@ export const Footer = () => {
 
             {/* Alt Satır */}
             <div className="mt-12 text-center text-sm text-gray-400 border-t border-gray-600 pt-6">
-                © 2025 BYildiz. Tüm hakları saklıdır.
+                © 2025 OsianaTech. Tüm hakları saklıdır.
             </div>
         </footer>
     )

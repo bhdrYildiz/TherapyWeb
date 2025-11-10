@@ -10,9 +10,9 @@ export const Hero = () => {
             <div className="max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row items-center justify-center md:justify-between gap-8">
 
                 {/* SOL RESİM */}
-                <div className="relative w-full max-w-[480px] h-[450px] mt-12 md:mt-0">
+                <div className="relative w-full max-w-[420px] h-[520px] md:h-[520px] mt-12 md:mt-0">
                     <Image
-                        src="/images/Eminekiyga.jpg"
+                        src="/images/resim1.jpg"
                         alt="profile"
                         fill
                         className="object-cover rounded-md shadow-lg"
@@ -24,17 +24,17 @@ export const Hero = () => {
                     <div>
                         <h2 className="text-2xl font-bold text-[#2f3e46] mb-4">Klinik Psikolog Emine Kıyga</h2>
                         <p className="text-base text-[#2f3e46] mt-2 mb-4">
-                            İstanbul&apos;da Klinik Psikolog olarak psikolojik danışmanlık hizmetleri sunuyorum.
-                            Birlikte planlı şekilde ilerleyerek yaşadığınız zorlukların üstesinden gelmenize yardımcı oluyorum.
-                            Hizmetlerim arasında Dinamik Terapi,  EMDR uygulamaları, depresyon ile baş etme teknikleri ve kaygı durumlarında destek çalışmaları bulunmaktadır.
-                            Her danışanın ihtiyacına özel yaklaşımlar geliştirerek, ruhsal iyi oluş halinize katkı sağlamak için buradayım.
+                            Klinik Psikolog Emine Kıyga, lisans eğitimini Marmara Üniversitesi Psikolojik Danışmanlık ve Rehberlik Anabilim Dalı’nda onur öğrencisi olarak tamamlamıştır.
+                            Ardından Psikoterapi Enstitüsü’nde üç yıl süren Bütüncül Psikoterapi eğitimine başlamıştır. Eğitimin ilk yılını tamamladıktan sonra eşzamanlı olarak İstanbul
+                            Aydın Üniversitesi Klinik Psikoloji Yüksek Lisans Programı’nda eğitimine başlamış olup tezini teslim ederek hem yüksek lisansını hem de Bütüncül Psikoterapi eğitimini başarıyla tamamlamıştır.
+                            Tez çalışmasında “Kaçıngan Bağlanma ile Kırılgan Narsisizm Arasındaki İlişkide Kendiliknesnesi İhtiyaçlarının Aracı Rolü” adlı konuyu ele almıştır.
                         </p>
                     </div>
 
                     {/* Sosyal Linkler */}
                     <ul className="flex space-x-3 mt-6">
                         <li>
-                            <Link href="mailto:eminekiyga.50@gmail.com"
+                            <Link href="mailto:klnpskeminekiyga@outlook.com"
                                 className="bg-[#2f3e46] text-[#f8f9fa] hover:text-[#5c5470] w-9 h-9 flex items-center justify-center rounded hover:bg-[var(--color-accentMint)] transition-colors">
                                 <FaGooglePlusG />
                             </Link>

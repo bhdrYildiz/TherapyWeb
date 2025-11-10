@@ -56,8 +56,8 @@ const ContactPage = () => {
                                 {
                                     icon: "fas fa-envelope",
                                     label: "E-Posta",
-                                    value: "eminekiyga.50@gmail.com",
-                                    href: "mailto:eminekiyga.50@gmail.com"
+                                    value: "klnpskeminekiyga@outlook.com",
+                                    href: "mailto:klnpskeminekiyga@outlook.com"
                                 },
                                 {
                                     icon: "fas fa-map-marker-alt",

@@ -12,12 +12,12 @@ const faqs = [
     {
         question: 'Seans süresi nedir ?',
         answer:
-            'Bir terapi seansı genellikle 45 ile 60 dakika arasında sürer. Ancak bazı durumlarda bu süre terapiste ve terapi türüne göre değişebilir.'
+            'Bir terapi seansı genellikle 45-50 dakika arasında sürer. Ancak bazı durumlarda bu süre terapiste ve terapi türüne göre değişebilir.'
     },
     {
         question: 'Terapi kaç seans sürer ?',
         answer:
-            'Terapi süresi kişisel ihtiyaçlara göre değişiklik gösterir. Kimi danışanlar için 4-6 seans yeterli olurken, bazı durumlarda bu süreç aylar sürebilir.'
+            'Terapinin ne kadar süreceği konusunda net bir sayı vermek doğru bir yaklaşım değildir. Bu süreç her bireyin ruhsal yapısına özgü olarak değişkenlik gösteren dinamik bir süreçtir.'
     },
     {
         question: 'Seans ücretleri nedir ?',
