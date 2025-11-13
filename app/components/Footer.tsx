@@ -1,6 +1,7 @@
 'use client'
 
-import { FaInstagram, FaPhone, FaGooglePlusG, FaEnvelope, FaLinkedinIn, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaInstagram, FaPhone, FaGooglePlusG, FaLinkedinIn, FaMapMarkerAlt } from 'react-icons/fa'
+import { HiOutlineMail } from 'react-icons/hi'
 import Link from 'next/link'
 
 const socialLinks = [
@@ -50,14 +51,25 @@ export const Footer = () => {
                     <h3 className="text-xl font-semibold mb-4">İletişim</h3>
                     <ul className="text-sm text-white space-y-2">
                         <li className="flex items-center gap-2">
-                            <FaEnvelope className="text-[var(--color-accentMint)]" size={18} />
-                            klnpskeminekiyga@outlook.com
+                            <HiOutlineMail className="text-[var(--color-accentMint)] flex-shrink-0" size={18} />
+                            <a
+                                href="mailto:klnpskeminekiyga@outlook.com"
+                                className="hover:text-[var(--color-accentMint)] transition-colors"
+                            >
+                                klnpskeminekiyga@outlook.com
+                            </a>
                         </li>
                         <li className="flex items-center gap-2">
-                            <FaPhone className="text-[var(--color-accentMint)]" size={18} /> +90 538 543 83 24
+                            <FaPhone className="text-[var(--color-accentMint)] flex-shrink-0" size={18} />
+                            <a
+                                href="tel:+905385438324"
+                                className="hover:text-[var(--color-accentMint)] transition-colors"
+                            >
+                                +90 538 543 83 24
+                            </a>
                         </li>
                         <li className="flex items-center gap-2">
-                            <FaMapMarkerAlt className="text-[var(--color-accentMint)]" size={18} />
+                            <FaMapMarkerAlt className="text-[var(--color-accentMint)] flex-shrink-0" size={18} />
                             İstanbul, Türkiye
                         </li>
                     </ul>

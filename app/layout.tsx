@@ -21,7 +21,12 @@ export const metadata: Metadata = {
   title: "Emine Kıyga",
   description: "Klinik Psikolog Emine Kıyga",
   icons: {
-    icon: "/TerapiLogo.ico",
+    icon: [
+      { url: "/TerapiLogo.ico", sizes: "any" },
+      { url: "/TerapiLogo.ico", type: "image/x-icon" },
+    ],
+    shortcut: "/TerapiLogo.ico",
+    apple: "/TerapiLogo.ico",
   },
 };
 

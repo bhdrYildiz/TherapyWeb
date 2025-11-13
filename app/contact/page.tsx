@@ -28,7 +28,7 @@ const ContactPage = () => {
                         Terapilerimi hem <strong>online</strong> hem de <strong>yüz yüze</strong> olarak gerçekleştirebiliyorum.
                         Online seanslar <strong>Zoom</strong> veya <strong>Google Meet</strong> üzerinden yapılmakta olup,
                         yüz yüze görüşmeler için randevu almanız yeterlidir. Size en uygun terapi yöntemini birlikte belirleyebiliriz.
-                        Her danışanın süreci benzersizdir, bu nedenle size özel bir yol haritası oluşturmak temel hedefimizdir.
+                        Her danışanın süreci benzersizdir, bu nedenle size özel bir yol haritası oluşturmak temel hedefimdir.
                     </p>
                 </div>
             </section>
@@ -82,25 +82,47 @@ const ContactPage = () => {
                         {/* Sağ: İletişim Formu */}
                         <div className="bg-white shadow-md rounded-md p-6 space-y-6">
                             <h3 className="text-xl font-semibold text-[#2f3e46]">İletişim Formu</h3>
-                            <form className="space-y-4">
+                            <form
+                                onSubmit={(e) => {
+                                    e.preventDefault()
+                                    const form = e.currentTarget
+                                    const formData = new FormData(form)
+                                    const name = formData.get('name') as string
+                                    const email = formData.get('email') as string
+                                    const subject = formData.get('subject') as string
+                                    const message = formData.get('message') as string
+
+                                    const mailtoLink = `mailto:klnpskeminekiyga@outlook.com?subject=${encodeURIComponent(subject || 'İletişim Formu')}&body=${encodeURIComponent(`Ad Soyad: ${name}\nE-posta: ${email}\n\nMesaj:\n${message}`)}`
+                                    window.location.href = mailtoLink
+                                }}
+                                className="space-y-4"
+                            >
                                 <input
                                     type="text"
+                                    name="name"
                                     placeholder="Adınız Soyadınız"
+                                    required
                                     className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#2f3e46]"
                                 />
                                 <input
                                     type="email"
+                                    name="email"
                                     placeholder="E-posta Adresiniz"
+                                    required
                                     className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#2f3e46]"
                                 />
                                 <input
                                     type="text"
+                                    name="subject"
                                     placeholder="Konu"
+                                    required
                                     className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#2f3e46]"
                                 />
                                 <textarea
+                                    name="message"
                                     rows={4}
                                     placeholder="Mesajınız"
+                                    required
                                     className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#2f3e46]"
                                 />
                                 <button

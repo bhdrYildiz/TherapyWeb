@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { HiBars3BottomRight } from 'react-icons/hi2'
@@ -40,9 +41,18 @@ const ResponsiveNavbar = () => {
             >
                 <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
                     {/* Logo */}
-                    <div className="text-xl font-light tracking-wide text-[var(--color-textGray)]">
-                        <span className="text-[var(--color-textGray)]">KLİNİK PSİKOLOG</span> <span className="font-semibold">EMİNE</span> KIYGA
-                    </div>
+                    <Link href="/" className="flex items-center gap-3">
+                        <Image
+                            src="/TerapiLogo.ico"
+                            alt="Logo"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                        />
+                        <div className="text-xl font-light tracking-wide text-[var(--color-textGray)]">
+                            <span className="text-[var(--color-textGray)]">KLİNİK PSİKOLOG</span> <span className="font-semibold">EMİNE</span> KIYGA
+                        </div>
+                    </Link>
 
                     {/* Desktop nav */}
                     <nav className="hidden md:flex space-x-6">

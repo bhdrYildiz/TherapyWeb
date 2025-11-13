@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 type BlogPost = {
@@ -56,11 +57,12 @@ export const BlogSection = () => {
                             key={post.id}
                             className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1 duration-300 border border-gray-200"
                         >
-                            <div className="overflow-hidden h-48">
-                                <img
+                            <div className="relative overflow-hidden h-48">
+                                <Image
                                     src={post.image}
                                     alt={post.title}
-                                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                    fill
+                                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                                 />
                             </div>
                             <div className="p-6">

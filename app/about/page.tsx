@@ -31,7 +31,7 @@ const AboutPage = () => {
                         viewport={{ once: true }}
                     >
                         <Image
-                            src="/images/resim1.jpg"
+                            src="/images/resim2.jpg"
                             alt="Psikolog Emine Kiyga"
                             width={500}
                             height={500}
@@ -77,19 +77,19 @@ const AboutPage = () => {
                             {
                                 title: "Danışan Odaklı Planlama",
                                 description:
-                                    "Her süreci ayrıntılı ihtiyaç analiziyle başlatır, seansı danışanın hedeflerine göre yapılandırırım.",
+                                    "Her süreci ayrıntılı ayrıntılı anamnez süreciyle başlatır, seansı danışanın hedeflerine göre yapılandırırım.",
                                 icon: FaCompass,
                             },
                             {
-                                title: "Etik ve Güvenli Alan",
+                                title: "Gizlilik ve Etik",
                                 description:
                                     "Sürecin her aşamasında mesleki etik ilkelere bağlı kalarak güvenli ve sınırları net bir ilişki alanı kurarım.",
                                 icon: FaShieldAlt,
                             },
                             {
-                                title: "Şefkat Temelli Yaklaşım",
+                                title: "Bilimsel Temelli Yaklaşım",
                                 description:
-                                    "Danışanın duygularını regüle etmesine destek veren şefkatli, yargılayıcı olmayan bir terapi atmosferi sunarım.",
+                                    "Danışanın duygularını regüle etmesine destek veren bilimsel, yargılayıcı olmayan bir terapi atmosferi sunarım.",
                                 icon: FaHeart,
                             },
                         ].map(({ title, description, icon: Icon }, index) => (

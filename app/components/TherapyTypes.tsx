@@ -19,7 +19,8 @@ const therapies: TherapyItem[] = [
         icon: MdComputer,
         title: "Online Terapi",
         description:
-            `Online terapi; terapistin danışan ile internet aracılığıyla görüntülü görüşme platformlarında konuşarak gerçekleştirdiği psikoterapi biçimidir. Online terapide de tıpkı yüz yüze terapide olduğu gibi danışan ve terapistin birbirlerini duyup görebileceği ve görüşmelerin yalnızca bu iki taraf açısından duyulabileceği ofis ortamı sağlanmalıdır.`,
+            `Online psikoterapi, teknolojinin sunduğu imkânlarla bireyin bulunduğu yerden güvenli bir şekilde psikolojik destek almasını sağlar.
+Araştırmalar, online terapi süreçlerinin yüz yüze terapi kadar etkili olduğunu ve danışanların yaşam koşullarına uyumlu bir biçimde sürdürülebilirlik sağladığını göstermektedir.`,
         link: "contact"
     },
     {
@@ -27,7 +28,7 @@ const therapies: TherapyItem[] = [
         icon: GiFaceToFace,
         title: "Yüz Yüze Terapi",
         description:
-            `Psikoterapi: Eğitimli bir ruh sağlığı profesyonelinin hasta/danışanın mevcut yakınmalarını ortadan kaldırmak veya geriletmek, rahatsızlık veren davranış örüntülerini düzeltmek ve olumlu kişilik gelişimini teşvik etmek amacıyla, her iki tarafın da bilerek profesyonel bir ilişki kurduğu psikolojik tedavidir.`,
+            `İstanbul/ Kadıköy’de yüz yüze seanslarımı planlamaktayım. Fiziksel olarak merkeze ulaşım sağlayabilecek danışanlarım ile uygun olan ortak gün ve saatler için randevu planlaması yapmaktayım.`,
         link: "contact"
     }
 ]

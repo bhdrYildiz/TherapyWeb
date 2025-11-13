@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
+import Image from 'next/image'
 import ReactMarkdown from 'react-markdown'
 import { blogPosts } from '@/app/data/blogPosts'
 
@@ -43,10 +44,11 @@ export default async function BlogDetailPage({ params }: BlogParams) {
                         <h1 className="text-3xl font-bold text-[#2f3e46] mb-6">{post.title}</h1>
 
                         <div className="w-full h-[350px] relative mb-8">
-                            <img
+                            <Image
                                 src={post.image}
                                 alt={post.title}
-                                className="w-full h-full rounded-md"
+                                fill
+                                className="object-cover rounded-md"
                             />
                         </div>
 
