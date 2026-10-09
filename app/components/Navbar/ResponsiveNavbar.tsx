@@ -9,10 +9,9 @@ import { CgClose } from 'react-icons/cg'
 
 const links = [
     { name: 'Anasayfa', href: '/' },
-    { name: 'Hakkımda', href: '/about' },
-    { name: 'Çalışma Alanlarım', href: '/workingAreas' },
     { name: 'Blog', href: '/blog' },
     { name: 'İletişim', href: '/contact' },
+    { name: 'Instagram', href: 'instagram'}
 ]
 
 const ResponsiveNavbar = () => {

@@ -13,15 +13,15 @@ export const workingAreasData = [
     shortDescription:
       "Sürekli endişe, huzursuzluk ve panik haliyle baş etmekte zorlanan bireyler için kişiye özel terapi yaklaşımları sunuyorum.",
     longContent: `
--Panik Bozukluk
+Panik Bozukluk
 
--Agorafobi (Mekandan Korkma)
+Agorafobi (Mekandan Korkma)
 
--Sosyal Anksiyete Bozukluğu
+Sosyal Anksiyete Bozukluğu
 
--Yaygın Anksiyete Bozukluğu
+Yaygın Anksiyete Bozukluğu
 
--Özgül Fobiler`,
+Özgül Fobiler`,
     icon: MdOutlinePsychology,
   },
   {
@@ -31,15 +31,15 @@ export const workingAreasData = [
     shortDescription:
       "Kişilik bozuklukları ile ilgili terapötik destek sunuyorum.",
     longContent: `
--Borderline Kişilik Bozukluğu
+Borderline Kişilik Bozukluğu
 
--Narsisistik Kişilik Bozukluğu
+Narsisistik Kişilik Bozukluğu
 
--Antisosyal Kişilik Bozukluğu
+Antisosyal Kişilik Bozukluğu
 
--Obsesif Kompulsif Kişilik Bozukluğu
+Obsesif Kompulsif Kişilik Bozukluğu
 
--Şizoid Kişilik Bozukluğu
+Şizoid Kişilik Bozukluğu
     `,
     icon: HiOutlineUserGroup,
   },
@@ -50,11 +50,11 @@ export const workingAreasData = [
     shortDescription:
       "Çöküntü hali, isteksizlik ve umutsuzluk gibi duygularla baş edebilmek için profesyonel destek sunuyorum.",
     longContent: `
--Depresyon
+Depresyon
 
--Bipolar Bozukluk
+Bipolar Bozukluk
 
--Distimik Bozukluk
+Distimik Bozukluk
     `,
     icon: FaRegSadCry,
   },
@@ -65,11 +65,11 @@ export const workingAreasData = [
     shortDescription:
       "Geçmiş travmaların bugünkü yaşamınıza etkilerini azaltmak için EMDR ve diğer terapötik tekniklerle çalışıyorum.",
     longContent: `
--Travma Sonrası Stres Bozukluğu (TSSB)
+Travma Sonrası Stres Bozukluğu (TSSB)
 
--Akut Stres Bozukluğu
+Akut Stres Bozukluğu
 
--Karmaşık Travma
+Karmaşık Travma
 `,
     icon: GiHeartInside,
   },
@@ -80,21 +80,20 @@ export const workingAreasData = [
     shortDescription:
       "Zihni sürekli meşgul eden takıntılı düşünceler ve tekrar eden davranışlarla başa çıkmanıza yardımcı oluyorum.",
     longContent: `
--Yakın ilişkilerde tekrarlayan çatışmalar, mesafe veya bağımlılık döngüleri.
+Yakın ilişkilerde tekrarlayan çatışmalar, mesafe veya bağımlılık döngüleri.
 
--Kaçıngan, kaygılı veya kararsız bağlanma örüntüleri.
+Kaçıngan, kaygılı veya kararsız bağlanma örüntüleri.
 
--İlişkilerde duygusal ihtiyaçları fark etmekte ve ifade etmekte zorlanma.
+İlişkilerde duygusal ihtiyaçları fark etmekte ve ifade etmekte zorlanma.
 
--Terk edilme korkusu, aşırı uyum sağlama ya da kontrol etme eğilimleri.`,
+Terk edilme korkusu, aşırı uyum sağlama ya da kontrol etme eğilimleri.`,
     icon: MdOutlinePsychologyAlt,
   },
   {
     slug: "kayip-ayrilik-ve-yas-surecleri",
     title: "Kayıp, Ayrılık ve Yas Süreçleri",
     image: "/images/eatingDisorders.png",
-    shortDescription:
-      "",
+    shortDescription: "",
     longContent: ``,
     icon: FaHeartbeat,
   },
@@ -102,8 +101,7 @@ export const workingAreasData = [
     slug: "duygusal-duzenleme-ve-ofke-problemleri",
     title: "Duygusal Düzenleme ve Öfke Problemleri",
     image: "/images/textAnxiety.png",
-    shortDescription:
-      "",
+    shortDescription: "",
     longContent: ``,
     icon: PiExamBold,
   },
@@ -111,8 +109,7 @@ export const workingAreasData = [
     slug: "stres-yonetimi",
     title: "Stres Yönetimi",
     image: "/images/textAnxiety.png",
-    shortDescription:
-      "",
+    shortDescription: "",
     longContent: ``,
     icon: PiExamBold,
   },
@@ -120,16 +117,15 @@ export const workingAreasData = [
     slug: "ergenlik-donemi-sorunlari",
     title: "Ergenlik Dönemi Sorunları",
     image: "/images/textAnxiety.png",
-    shortDescription:
-      "",
+    shortDescription: "",
     longContent: `
--Kimlik gelişimi, arkadaş ilişkileri, okul uyumu ve sınav kaygısı.
+Kimlik gelişimi, arkadaş ilişkileri, okul uyumu ve sınav kaygısı.
 
--Aileyle iletişim sorunları, öfke, içe kapanma veya riskli davranışlar.
+Aileyle iletişim sorunları, öfke, içe kapanma veya riskli davranışlar.
 
--Kendini ifade etmede güçlük, özgüven problemleri, sosyal çekilme.
+Kendini ifade etmede güçlük, özgüven problemleri, sosyal çekilme.
 
--Sınır koyabilme, sınırları koruyabilme
+Sınır koyabilme, sınırları koruyabilme
 `,
     icon: PiExamBold,
   },

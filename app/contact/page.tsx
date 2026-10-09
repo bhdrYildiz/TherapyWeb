@@ -1,158 +1,181 @@
+
 'use client'
 
-import { motion } from 'framer-motion'
-import '@fortawesome/fontawesome-free/css/all.min.css'
+import React from 'react'
+import { FiPhone, FiMail, FiArrowUpRight, FiArrowRight } from 'react-icons/fi'
 
-const ContactPage = () => {
+export default function ContactPage() {
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+
+        const formData = new FormData(e.currentTarget)
+
+        const name = String(formData.get('name') || '')
+        const email = String(formData.get('email') || '')
+        const subject = String(formData.get('subject') || '')
+        const message = String(formData.get('message') || '')
+
+        const body = `Ad Soyad: ${name}\nE-posta: ${email}\n\nMesaj:\n${message}`
+
+        const mailtoLink = `mailto:klnpskeminekiyga@outlook.com?subject=${encodeURIComponent(subject || 'İletişim Formu')}&body=${encodeURIComponent(body)}`
+
+        window.location.href = mailtoLink
+    }
+
     return (
-        <main className="min-h-screen bg-white text-gray-800">
+        <main className="min-h-screen bg-[#F8F6F3] text-[#292626]">
 
-            {/* Banner */}
-            <section className="relative w-full h-[45vh] flex bg-fixed bg-center items-center justify-center" style={{ backgroundImage: "url('/images/hakkimdaBg.png')" }}>
-                <div className="absolute inset-0" />
-                <motion.h1
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                    className="relative z-10 text-[#2f3e46] text-2xl sm:text-3xl font-bold tracking-wide uppercase mt-12 text-center"
-                >
-                    İLETİŞİM
-                </motion.h1>
-            </section>
 
-            {/* Bilgilendirme Yazısı */}
-            <section className="py-16 bg-white text-gray-700">
-                <div className="max-w-7xl mx-auto px-6 text-start space-y-6">
-                    <h2 className="text-2xl font-semibold text-[#2f3e46]">Terapiler Hakkında</h2>
-                    <p className="text-lg leading-relaxed">
-                        Terapilerimi hem <strong>online</strong> hem de <strong>yüz yüze</strong> olarak gerçekleştirebiliyorum.
-                        Online seanslar <strong>Zoom</strong> veya <strong>Google Meet</strong> üzerinden yapılmakta olup,
-                        yüz yüze görüşmeler için randevu almanız yeterlidir. Size en uygun terapi yöntemini birlikte belirleyebiliriz.
-                        Her danışanın süreci benzersizdir, bu nedenle size özel bir yol haritası oluşturmak temel hedefimdir.
+            {/* HERO / BANNER */}
+            <section className="relative isolate min-h-[390px] overflow-hidden bg-[#302C2A] text-white sm:min-h-[440px]">
+
+                {/* Sağ dekoratif mimari çizgiler */}
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-[65%] overflow-hidden opacity-60">
+                    <div className="absolute -right-[180px] -top-[340px] h-[850px] w-[850px] rounded-full border border-[#8C8077]/30" />
+                    <div className="absolute -right-[110px] -top-[270px] h-[710px] w-[710px] rounded-full border border-[#8C8077]/30" />
+                    <div className="absolute -right-[40px] -top-[200px] h-[570px] w-[570px] rounded-full border border-[#8C8077]/30" />
+                    <div className="absolute right-[30px] top-[70px] h-[420px] w-[420px] rounded-full border border-[#8C8077]/20" />
+                </div>
+
+                {/* İnce çerçeve çizgileri */}
+                <div className="pointer-events-none absolute inset-x-6 bottom-8 top-24 border border-white/10 sm:inset-x-12" />
+
+                {/* İçerik */}
+                <div className="relative z-10 mx-auto flex min-h-[390px] max-w-7xl flex-col justify-center px-12 pb-14 pt-32 sm:min-h-[440px] sm:px-20 lg:px-24">
+
+                    <div className="mb-6 flex items-center gap-3">
+                        <span className="h-px w-9 bg-[#B9A99B]" />
+                        <span className="text-[10px] font-medium uppercase tracking-[0.28em] text-[#C7B9AC]">
+                            EMİNE KIYGA · KLİNİK PSİKOLOG
+                        </span>
+                    </div>
+
+                    <h1 className="font-serif text-[56px] font-normal leading-[1.08] tracking-tight text-[#F8F6F3] sm:text-[76px] lg:text-[94px]">
+                        İletişim<span className="text-[#B9A99B]">.</span>
+                    </h1>
+
+                    <p className="mt-7 max-w-md text-[14px] leading-[1.9] text-[#D0C7C0] sm:text-[15px]">
+                        Sorularınız ve bilgi talepleriniz için iletişime geçebilirsiniz.
                     </p>
                 </div>
+
+                {/* Alt sınır */}
+                <div className="absolute inset-x-0 bottom-0 h-[3px] bg-[#B5A69A]" />
             </section>
 
-            {/* İletişim Bilgileri + Harita + Form */}
-            <section className="bg-gray-50 py-20">
-                <div className="max-w-7xl mx-auto px-6 space-y-10">
-                    {/* Başlık */}
-                    <h2 className="text-3xl font-bold text-[#2f3e46] text-center lg:text-left">
-                        İletişim Bilgileri
-                    </h2>
 
-                    {/* Grid: Sol Bilgiler - Sağ Form */}
-                    <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* İLETİŞİM ALANI */}
+            <section className="py-16 lg:py-24">
+                <div className="mx-auto max-w-6xl px-6 lg:px-10">
 
-                        {/* Sol: Kartlı Bilgiler */}
-                        <div className="space-y-6">
-                            {[
-                                {
-                                    icon: "fas fa-phone",
-                                    label: "Telefon",
-                                    value: "+90 538 543 83 24",
-                                    href: "tel:+905385438324"
-                                },
-                                {
-                                    icon: "fas fa-envelope",
-                                    label: "E-Posta",
-                                    value: "klnpskeminekiyga@outlook.com",
-                                    href: "mailto:klnpskeminekiyga@outlook.com"
-                                },
-                                {
-                                    icon: "fas fa-map-marker-alt",
-                                    label: "Adres",
-                                    value: "İstanbul, Türkiye"
-                                }
-                            ].map(({ icon, label, value, href }, i) => (
-                                <div key={i} className="flex items-start gap-4 p-5 bg-white shadow-md rounded-md">
-                                    <i className={`${icon} text-2xl text-[#5c5470] mt-2`} />
-                                    <div>
-                                        <h4 className="font-semibold text-[#2f3e46]">{label}</h4>
-                                        {href ? (
-                                            <a href={href} className="text-gray-600 hover:underline">{value}</a>
-                                        ) : (
-                                            <p className="text-gray-600">{value}</p>
-                                        )}
-                                    </div>
+                    <div className="grid items-start gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
+
+                        {/* SOL TARAF */}
+                        <div className="lg:pt-8">
+
+                            <span className="mb-4 block text-[11px] font-medium uppercase tracking-[0.22em] text-[#A09287]">
+                                İLETİŞİM BİLGİLERİ
+                            </span>
+
+                            <h2 className="mb-6 font-serif text-3xl font-normal leading-tight text-[#292626] sm:text-4xl">
+                                İletişime Geçin
+                            </h2>
+
+                            <p className="mb-12 max-w-md text-[14px] leading-[1.9] text-[#746C66]">
+                                Mesleki çalışmalar ve çalışma alanları hakkında bilgi almak için aşağıdaki iletişim kanallarını kullanabilirsiniz.
+                            </p>
+
+                            {/* TELEFON */}
+                            <a href="tel:+905385438324" className="group flex items-center gap-5 border-b border-[#E0D9D1] py-6">
+                                <FiPhone size={20} className="shrink-0 text-[#98877B]" />
+
+                                <div className="min-w-0 flex-1">
+                                    <span className="mb-1 block text-[11px] uppercase tracking-[0.12em] text-[#A09287]">Telefon</span>
+                                    <span className="text-[15px] text-[#514A48]">+90 538 543 83 24</span>
                                 </div>
-                            ))}
+
+                                <FiArrowUpRight size={18} className="text-[#A09287] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+                            </a>
+
+                            {/* E-POSTA */}
+                            <a href="mailto:klnpskeminekiyga@outlook.com" className="group flex items-center gap-5 border-b border-[#E0D9D1] py-6">
+                                <FiMail size={20} className="shrink-0 text-[#98877B]" />
+
+                                <div className="min-w-0 flex-1">
+                                    <span className="mb-1 block text-[11px] uppercase tracking-[0.12em] text-[#A09287]">E-posta</span>
+                                    <span className="break-all text-[14px] text-[#514A48]">klnpskeminekiyga@outlook.com</span>
+                                </div>
+
+                                <FiArrowUpRight size={18} className="shrink-0 text-[#A09287] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+                            </a>
+
                         </div>
 
-                        {/* Sağ: İletişim Formu */}
-                        <div className="bg-white shadow-md rounded-md p-6 space-y-6">
-                            <h3 className="text-xl font-semibold text-[#2f3e46]">İletişim Formu</h3>
-                            <form
-                                onSubmit={(e) => {
-                                    e.preventDefault()
-                                    const form = e.currentTarget
-                                    const formData = new FormData(form)
-                                    const name = formData.get('name') as string
-                                    const email = formData.get('email') as string
-                                    const subject = formData.get('subject') as string
-                                    const message = formData.get('message') as string
+                        {/* SAĞ TARAF: FORM */}
+                        <div className="border border-[#E9E3DC] bg-white p-7 sm:p-10 lg:p-12">
 
-                                    const mailtoLink = `mailto:klnpskeminekiyga@outlook.com?subject=${encodeURIComponent(subject || 'İletişim Formu')}&body=${encodeURIComponent(`Ad Soyad: ${name}\nE-posta: ${email}\n\nMesaj:\n${message}`)}`
-                                    window.location.href = mailtoLink
-                                }}
-                                className="space-y-4"
-                            >
-                                <input
-                                    type="text"
-                                    name="name"
-                                    placeholder="Adınız Soyadınız"
-                                    required
-                                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#2f3e46]"
-                                />
-                                <input
-                                    type="email"
-                                    name="email"
-                                    placeholder="E-posta Adresiniz"
-                                    required
-                                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#2f3e46]"
-                                />
-                                <input
-                                    type="text"
-                                    name="subject"
-                                    placeholder="Konu"
-                                    required
-                                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#2f3e46]"
-                                />
-                                <textarea
-                                    name="message"
-                                    rows={4}
-                                    placeholder="Mesajınız"
-                                    required
-                                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#2f3e46]"
-                                />
-                                <button
-                                    type="submit"
-                                    className="bg-[#5c5470] cursor-pointer text-white px-6 py-2 rounded hover:bg-[#2f3e46] transition"
-                                >
+                            <span className="mb-3 block text-[11px] font-medium uppercase tracking-[0.22em] text-[#A09287]">
+                                MESAJ OLUŞTURUN
+                            </span>
+
+                            <h2 className="mb-4 font-serif text-3xl font-normal text-[#292626] sm:text-4xl">
+                                İletişim Formu
+                            </h2>
+
+                            <p className="mb-9 text-[13px] leading-[1.85] text-[#8A8078]">
+                                Aşağıdaki bilgileri doldurarak e-posta uygulamanızda mesajınızı hazırlayabilirsiniz.
+                            </p>
+
+                            <form onSubmit={handleSubmit} className="space-y-6">
+
+                                {/* AD SOYAD */}
+                                <div>
+                                    <label htmlFor="name" className="mb-2 block text-[12px] font-medium text-[#514A48]">
+                                        Adınız Soyadınız
+                                    </label>
+
+                                    <input id="name" name="name" type="text" autoComplete="name" placeholder="Adınız ve soyadınız" required className="w-full rounded-sm border border-[#E4DED7] bg-[#FAF9F7] px-4 py-3.5 text-[14px] text-[#292626] outline-none transition-colors placeholder:text-[#A99E95] focus:border-[#98877B]" />
+                                </div>
+
+                                {/* E-POSTA */}
+                                <div>
+                                    <label htmlFor="email" className="mb-2 block text-[12px] font-medium text-[#514A48]">
+                                        E-posta Adresiniz
+                                    </label>
+
+                                    <input id="email" name="email" type="email" autoComplete="email" placeholder="ornek@eposta.com" required className="w-full rounded-sm border border-[#E4DED7] bg-[#FAF9F7] px-4 py-3.5 text-[14px] text-[#292626] outline-none transition-colors placeholder:text-[#A99E95] focus:border-[#98877B]" />
+                                </div>
+
+                                {/* KONU */}
+                                <div>
+                                    <label htmlFor="subject" className="mb-2 block text-[12px] font-medium text-[#514A48]">
+                                        Konu
+                                    </label>
+
+                                    <input id="subject" name="subject" type="text" placeholder="Mesajınızın konusu" required className="w-full rounded-sm border border-[#E4DED7] bg-[#FAF9F7] px-4 py-3.5 text-[14px] text-[#292626] outline-none transition-colors placeholder:text-[#A99E95] focus:border-[#98877B]" />
+                                </div>
+
+                                {/* MESAJ */}
+                                <div>
+                                    <label htmlFor="message" className="mb-2 block text-[12px] font-medium text-[#514A48]">
+                                        Mesajınız
+                                    </label>
+
+                                    <textarea id="message" name="message" rows={5} placeholder="Mesajınızı buraya yazabilirsiniz..." required className="w-full resize-y rounded-sm border border-[#E4DED7] bg-[#FAF9F7] px-4 py-3.5 text-[14px] leading-relaxed text-[#292626] outline-none transition-colors placeholder:text-[#A99E95] focus:border-[#98877B]" />
+                                </div>
+                                {/* BUTON */}
+                                <button type="submit" className="group flex w-full cursor-pointer items-center justify-center gap-3 bg-[#292626] px-6 py-4 text-[13px] font-medium tracking-wide text-white transition-colors duration-300 hover:bg-[#514A48]">
                                     Gönder
+                                    <FiArrowRight size={17} className="transition-transform duration-300 group-hover:translate-x-1" />
                                 </button>
                             </form>
                         </div>
-                    </div>
 
-                    <div className="max-w-7xl mx-auto mt-16 px-2">
-                        <div className="w-full h-[450px]">
-                            <iframe
-                                title="Psikoloji Merkezi Konumu"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.745219343224!2d29.0282374!3d40.987059499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb53520b3baf%3A0x18f61abe0f9826d5!2s%C3%96z%20Psikoloji!5e0!3m2!1str!2str!4v1755350747306!5m2!1str!2str"
-                                className="w-full h-full shadow rounded-md"
-                                allowFullScreen
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                            ></iframe>
-                        </div>
                     </div>
-
                 </div>
             </section>
 
         </main>
     )
 }
-
-export default ContactPage;
