@@ -1,9 +1,11 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Footer } from "./components/Footer";
 import ResponsiveNavbar from "./components/Navbar/ResponsiveNavbar";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import WhatsappButton from "./components/WhatsappButton";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -36,23 +38,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17725402378"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'AW-17725402378');
-      `,
-          }}
+    <html lang="tr">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+
+        {/* GOOGLE ADS */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17725402378"
+          strategy="afterInteractive"
         />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17725402378');
+          `}
+        </Script>
+
         <ResponsiveNavbar />
         {children}
         <Footer />
